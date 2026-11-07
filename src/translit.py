@@ -13,14 +13,18 @@ DEVANAGARI = {
     "SHA": "श", "SSA": "ष", "SA": "स", "HA": "ह",
 }
 
+
 def letter_name(code_hex):
     return unicodedata.name(chr(int(code_hex, 16)), "?").replace("BRAHMI LETTER ", "")
+
 
 def to_latin(name):
     return name.replace("VOCALIC ", "").lower()
 
+
 def to_devanagari(name):
     return DEVANAGARI.get(name, "?")
+
 
 if __name__ == "__main__":
     missing = 0
