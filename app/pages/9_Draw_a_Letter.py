@@ -67,7 +67,7 @@ st.session_state.setdefault("canvas_n", 0)
 left, right = st.columns([1, 1])
 with left:
     canvas = st_canvas(
-        stroke_width=14,
+        stroke_width=6,
         stroke_color="#000000",
         background_color="#FFFFFF",
         height=300,
